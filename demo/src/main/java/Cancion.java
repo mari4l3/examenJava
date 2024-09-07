@@ -6,6 +6,9 @@ private int duracion;
 private String genero;
 private String album;
 
+//constante estática "SEGUNDOS_POR_MINUTO":
+public static final int SEGUNDOS_POR_MINUTO = 60;
+
 
 // Constructor por defecto
 public Cancion() {
@@ -62,8 +65,7 @@ public void setGenero(String genero) {
 private int calcularDuracionMinutos() {
     return duracion / SEGUNDOS_POR_MINUTO;
 }
-//constante estática "SEGUNDOS_POR_MINUTO":
-public static final int SEGUNDOS_POR_MINUTO = 60;
+
 
 // Método para mostrar la información
 public void mostrarInformacion() {
